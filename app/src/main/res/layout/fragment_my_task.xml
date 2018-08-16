@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="@dimen/five_pad"
+        android:paddingLeft="@dimen/ten_size"
+        android:paddingRight="@dimen/ten_size"
+        android:paddingTop="@dimen/five_pad"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tv_active_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/left_selected"
+            android:gravity="center"
+            android:padding="@dimen/dot_size"
+            android:text="@string/activity_task"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_previous_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/right_un_selected"
+            android:gravity="center"
+            android:padding="@dimen/dot_size"
+            android:text="@string/prev_activity"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/task_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

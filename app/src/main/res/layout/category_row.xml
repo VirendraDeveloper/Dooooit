@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/ten_size"
+    android:paddingLeft="@dimen/ten_size"
+    android:paddingRight="@dimen/ten_size">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/five_pad"
+        android:background="@color/colorLightGray"
+        android:padding="@dimen/tab_text" />
+
+    <RelativeLayout
+        android:id="@+id/rl_category"
+        android:layout_width="@dimen/cat_dip"
+        android:layout_height="@dimen/cat_dip"
+        android:layout_marginTop="@dimen/ten_size"
+        android:background="@drawable/category_shape"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/iv_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_filter" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/left_dip"
+        android:layout_toLeftOf="@+id/iv_check_category"
+        android:layout_toRightOf="@+id/rl_category"
+        android:text="@string/payment_config" />
+
+    <ImageView
+        android:id="@+id/iv_check_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/left_dip"
+        android:src="@mipmap/ic_check_all" />
+
+</RelativeLayout>

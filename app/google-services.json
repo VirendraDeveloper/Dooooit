@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "423931574509",
+    "firebase_url": "https://dooit-198718.firebaseio.com",
+    "project_id": "dooit-198718",
+    "storage_bucket": "dooit-198718.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423931574509:android:0fb72da10aded5cd",
+        "android_client_info": {
+          "package_name": "cl.activaresearch.android_app.Dooit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423931574509-15c11b6mfcjhre0hmm8icd64th0qe6kq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFqx3a6GhcIVOLTTvSvDFHQ_iObr_dYkg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

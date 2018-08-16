@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dot_size">8dp</dimen>
+    <dimen name="ten_size">10dp</dimen>
+    <dimen name="five_pad">5dp</dimen>
+    <dimen name="thirty_size">30dp</dimen>
+    <dimen name="forty_size">40dp</dimen>
+    <dimen name="fifty_pad">50dp</dimen>
+    <dimen name="sixty_size">60dp</dimen>
+    <dimen name="seventy_dip">70dp</dimen>
+    <dimen name="prif_dip">20sp</dimen>
+    <dimen name="edt_size">18sp</dimen>
+    <dimen name="tab_text">13dp</dimen>
+    <dimen name="name_size">25sp</dimen>
+    <dimen name="cat_dip">35dp</dimen>
+    <dimen name="left_dip">15dp</dimen>
+    <dimen name="buu_size">200dp</dimen>
+    <dimen name="top_margin">25dp</dimen>
+    <dimen name="line_wd">1dp</dimen>
+    <dimen name="line_left">45dp</dimen>
+</resources>

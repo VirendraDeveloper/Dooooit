@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_detail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ten_size"
+        android:fontFamily="@font/sf_pro_display_light"
+        android:text="$ _ _ _"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/thirty_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

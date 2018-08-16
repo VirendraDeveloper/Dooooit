@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_processing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten_size"
+        android:text="@string/tv_processing"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_processing"
+        android:background="@color/colorWhite"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/tv_empty"
+        android:layout_width="@dimen/buu_size"
+        android:layout_height="@dimen/buu_size"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/ic_buu"
+        android:padding="@dimen/ten_size">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/left_dip"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/ten_size"
+            android:text="@string/no_payment_history"
+            android:textColor="@color/colorPrimaryDark" />
+    </RelativeLayout>
+
+</RelativeLayout>

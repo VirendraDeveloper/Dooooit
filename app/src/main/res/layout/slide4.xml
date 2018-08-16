@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/forty_size"
+        android:fontFamily="@font/sf_pro_display_light"
+        android:gravity="center_horizontal"
+        android:text="@string/slide4"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ten_size"
+        android:src="@mipmap/ic_slide_dooit" />
+
+    <ImageView
+        android:id="@+id/iv_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bal"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_balance" />
+
+    <LinearLayout
+        android:id="@+id/ll_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_salo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/name_size"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tv_balance"
+            android:text="$"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15.000"
+            android:textColor="@color/colorWhite"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_salo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/fifty_pad"
+        android:text="@string/balance"
+        android:textColor="@color/colorWhite" />
+
+
+</RelativeLayout>

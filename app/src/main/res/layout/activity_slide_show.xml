@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg"
+    android:padding="@dimen/thirty_size">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/SliderDots"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/SliderDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLayout"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/tv_dot1"
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_blue" />
+
+        <ImageView
+            android:id="@+id/tv_dot2"
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_blue" />
+
+        <ImageView
+            android:id="@+id/tv_dot3"
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_blue" />
+
+        <ImageView
+            android:id="@+id/tv_dot4"
+            android:layout_width="@dimen/dot_size"
+            android:layout_height="@dimen/dot_size"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_blue" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_join"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/join_bg"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/join_now"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center"
+            android:padding="@dimen/ten_size"
+            android:text="@string/have_acc"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

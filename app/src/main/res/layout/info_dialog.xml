@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ee212020"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/name_size">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/left_dip"
+            android:paddingRight="@dimen/left_dip"
+            android:paddingTop="@dimen/left_dip"
+            android:text="Title"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/prif_dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five_pad"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/left_dip"
+            android:paddingRight="@dimen/left_dip"
+            android:text="Message"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/left_dip" />
+
+        <TextView
+            android:id="@+id/tv_accept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/edt_size"
+            android:background="@drawable/acceptar_bg"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/ten_size"
+            android:text="@string/accept"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/left_dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

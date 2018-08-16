@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.dooit.activities.questions.SimpleAlternativeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five_pad"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:padding="@dimen/ten_size"
+            android:text="@string/cancel"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/edt_size" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:padding="@dimen/ten_size"
+            android:text="@string/search_filter"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/edt_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:padding="@dimen/ten_size"
+            android:text="@string/ok"
+            android:textAllCaps="true"
+            android:textColor="@color/colorLight"
+            android:textSize="@dimen/edt_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_question_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirty_size"
+        android:layout_marginRight="@dimen/thirty_size"
+        android:layout_marginTop="@dimen/five_pad"
+        android:fontFamily="@font/sf_pro_display_light"
+        android:text="@string/payment_config"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/top_margin" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/thirty_size"
+        android:layout_marginRight="@dimen/thirty_size"
+        android:layout_marginTop="@dimen/five_pad"
+        android:fontFamily="@font/sf_pro_display_light"
+        android:text="@string/ans_selection"
+        android:textSize="@dimen/prif_dip" />
+
+    <ListView
+        android:id="@+id/lv_alternatives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten_size"
+        android:background="@color/colorWhite"
+        android:divider="@color/colorWhite"
+        android:dividerHeight="@null" />
+
+</LinearLayout>

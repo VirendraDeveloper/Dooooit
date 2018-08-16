@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/container_body"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dot_size"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickProfile"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_profile_deactivate" />
+
+            <TextView
+                android:id="@+id/tv_tab_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/profile"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/tab_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickSeeker"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_seeker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_seeker_deactivate" />
+
+            <TextView
+                android:id="@+id/tv_tab_seeker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/seeker"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/tab_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickMyTask"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_task_deactivate" />
+
+            <TextView
+                android:id="@+id/tv_tab_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/my_task"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/tab_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickBank"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_bank_deactivate" />
+
+            <TextView
+                android:id="@+id/tv_tab_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/bank"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/tab_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="onClickPreference"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_tab_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_pref_deactivate" />
+
+            <TextView
+                android:id="@+id/tv_tab_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/preference"
+                android:textColor="@color/colorDarkGray"
+                android:textSize="@dimen/tab_text" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

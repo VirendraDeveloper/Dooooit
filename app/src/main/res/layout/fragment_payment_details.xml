@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/colorWhite"
+            android:padding="@dimen/ten_size"
+            android:src="@mipmap/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="@string/payment_details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/edt_size" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_editor"
+        android:layout_below="@+id/header"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/edt_size">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/prif_dip"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:text="@string/to_the_acc"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/edt_size" />
+
+        <TextView
+            android:id="@+id/tv_acc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ten_size"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:text="@string/name_holder"
+            android:textSize="@dimen/left_dip" />
+
+
+        <TextView
+            android:id="@+id/tv_rut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:text="@string/rut_holder"
+            android:textSize="@dimen/left_dip" />
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:text="@string/bank"
+            android:textSize="@dimen/left_dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/tv_acc_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/acc_type"
+                android:textSize="@dimen/left_dip" />
+
+            <TextView
+                android:id="@+id/tv_acc_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/five_pad"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="@string/acc_number"
+                android:textSize="@dimen/left_dip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_payment_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_detail" />
+
+</RelativeLayout>

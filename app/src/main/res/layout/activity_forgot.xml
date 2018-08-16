@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:backgroundTint="@color/colorWhite"
+        android:padding="@dimen/ten_size"
+        android:src="@mipmap/ic_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/thirty_size"
+        android:paddingRight="@dimen/thirty_size">
+
+        <ImageView
+            android:id="@+id/dooit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_sign_up_dooit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center"
+            android:text="@string/recover_password"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/forty_size"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="@dimen/ten_size"
+            android:paddingTop="@dimen/ten_size"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:textSize="@dimen/edt_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/tv_recover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifty_pad"
+            android:background="@drawable/join_bg"
+            android:fontFamily="@font/sf_pro_display_light"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/recover"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/prif_dip" />
+    </LinearLayout>
+
+</LinearLayout>
